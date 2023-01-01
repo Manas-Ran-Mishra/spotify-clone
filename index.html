@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section class="div-1">
+      <div class="nav">
+        <ul>
+          <li>
+            <!-- <img src="./images/Spotify-Logo.png" alt="spotify-logo" id="logo" /> -->
+            <a href="#"><i class="fab fa-2x fa-spotify"></i></a>
+          </li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </div>
+    </section>
+    <section class="div-2">
+      <div class="songs">
+        <h1>My Playlist</h1>
+        <div class="song">
+          <span class="cover-img">cover-img-1</span
+          ><span class="song-name">song-1</span
+          ><span class="duration">duration-1</span
+          ><span class="play-pause"
+            ><i class="fas play-button fa-play" id="0"></i
+          ></span>
+        </div>
+        <div class="song">
+          <span class="cover-img">cover-img-2</span
+          ><span class="song-name">song-2</span
+          ><span class="duration">duration-2</span
+          ><span class="play-pause"
+            ><i class="fas play-button fa-play" id="1"></i
+          ></span>
+        </div>
+        <div class="song">
+          <span class="cover-img">cover-img-3</span
+          ><span class="song-name">song-3</span
+          ><span class="duration">duration-3</span
+          ><span class="play-pause"
+            ><i class="fas play-button fa-play" id="2"></i
+          ></span>
+        </div>
+        <div class="song">
+          <span class="cover-img">cover-img-4</span
+          ><span class="song-name">song-4</span
+          ><span class="duration">duration-4</span
+          ><span class="play-pause"
+            ><i class="fas play-button fa-play" id="3"></i
+          ></span>
+        </div>
+        <div class="song">
+          <span class="cover-img">cover-img-5</span
+          ><span class="song-name">song-5</span
+          ><span class="duration">duration-5</span
+          ><span class="play-pause"
+            ><i class="fas play-button fa-play" id="4"></i
+          ></span>
+        </div>
+      </div>
+    </section>
+    <section class="div-3">
+      <div class="masterplayer">
+        <span class="masterView">
+          <img src="./images/covers/1.jpg" alt="" id="master-cover" />
+          <span class="masterDuration">0:00</span>
+          <input
+            type="range"
+            name="progressBar"
+            id="progressBar"
+            min="0"
+            max="100"
+            value="0"
+          />
+          <span id="currentSongDuration" class="masterDuration">0:00</span>
+        </span>
+        <div class="masterControls">
+          <div><i id="previous" class="fas fa-2x fa-step-backward"></i></div>
+          <div>
+            <i id="play_pause" class="fas fa-3x fa-play-circle"></i>
+          </div>
+          <div><i id="next" class="fas fa-2x fa-step-forward"></i></div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://kit.fontawesome.com/d0178980c2.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="./app.js" defer></script>
+  </body>
+</html>

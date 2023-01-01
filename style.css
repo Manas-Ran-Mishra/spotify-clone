@@ -1,0 +1,228 @@
+/* Importing Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&family=Rubik:wght@300&display=swap');
+
+/* Common CSS */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background-color: antiquewhite; */
+  height: calc(100vh - 3rem);
+  /* height: 100vh; */
+  font-size: 1rem;
+}
+
+a:visited,
+a:link,
+a:active,
+a:hover {
+  text-emphasis: none;
+  text-decoration: none;
+  color: white;
+}
+
+/* CSS for  div-1 */
+.div-1 {
+  color: white;
+  background-color: black;
+  font-family: 'Roboto', sans-serif;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+/* CSS for logo */
+/* #logo {
+  width: 3rem;
+} */
+
+/* CSS for navbar */
+.nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.nav ul li {
+  font-size: 1em;
+  padding: 0px 1rem;
+}
+
+/* CSS for div-3 */
+.div-3 {
+  position: absolute;
+  bottom: 0;
+  font-family: 'Rubik', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /* padding: 1rem; */
+}
+
+/* CSS for masterPlayer */
+.masterplayer {
+  width: 100vw;
+  padding-bottom: 0.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 1) 50%,
+    rgba(0, 0, 0, 0.6)
+  );
+}
+
+/* .masterplayer:hover,
+.masterplayer:focus {
+  background-color: rgb(19, 19, 19);
+} */
+
+.masterplayer > input {
+  padding: 1rem;
+  width: 80%;
+  cursor: pointer;
+}
+
+.masterControls {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+/* CSS for font awesome icons */
+.fab {
+  color: #1db954;
+}
+
+.fas {
+  padding: 0.5rem 0.5rem;
+  color: white;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.fas:hover,
+.fas:focus-within,
+.fas:active {
+  color: hsl(220, 100%, 63%);
+
+  /* opacity: 0.8; */
+}
+
+/* CSS for div-2 */
+.div-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Rubik', sans-serif;
+  position: relative;
+  height: 100%;
+  background: linear-gradient(
+      rgba(29, 185, 84, 0.2),
+      rgba(0, 0, 0, 0.7) 45%,
+      rgba(29, 185, 84, 0.2)
+    ),
+    url('./images/microphone-gef9311a17_1920.jpeg') center/cover no-repeat;
+}
+
+.songs {
+  /* background-color: white; */
+  display: flex;
+  justify-content: flex-start;
+  position: absolute;
+  top: 5%;
+  width: 75vw;
+  height: 75%;
+  border-radius: 1em;
+  flex-direction: column;
+  padding: 1em;
+  row-gap: 1em;
+  color: white;
+  background: linear-gradient(
+      150deg,
+      rgba(63, 208, 212, 0.2) 20%,
+      rgba(0, 0, 0, 0.2)
+    ),
+    url('./images/bg.jpg') center/cover no-repeat;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  /* background-image: url('./images/bg.jpg'); */
+  overflow: scroll;
+}
+
+.songs h1 {
+  padding: 2rem;
+  font-weight: 900;
+  font-size: xx-large;
+}
+
+.song {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  /* background-color: rgba(0, 0, 0, 0.4); */
+  background-image: linear-gradient(
+    150deg,
+    rgba(25, 25, 250, 0.1),
+    rgba(0, 0, 0, 0.4) 50%
+  );
+  border-radius: 2rem;
+  width: 60%;
+}
+
+.cover-img,
+.song-name,
+.duration,
+.play-pause {
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cover-img {
+  width: 100px;
+  height: 100px;
+}
+img {
+  display: inline-flex;
+  height: 5em;
+  border-radius: 2.5em;
+}
+
+.active {
+  color: hsl(220, 100%, 63%);
+}
+
+.masterDuration {
+  color: white;
+}
+
+.masterView {
+  width: 100vw;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr 5fr 0.5fr;
+  justify-items: center;
+}
+
+#progressBar {
+  width: 100%;
+}
+
+#master-cover {
+  height: 8em;
+  border-radius: 0.5em 0 0 0.5em;
+}
